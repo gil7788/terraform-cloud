@@ -1,12 +1,4 @@
 terraform {
-  cloud {
-    organization = "My-TFC-Tutorial"
-
-    workspaces {
-      name = "new-workspace"
-    }
-  }
-
   required_providers {
     google = {
       source  = "hashicorp/google"
