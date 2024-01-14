@@ -79,5 +79,16 @@
       - Click "Update VCS settings".
 
 
-**References**
+## Workflow
+**Step 1: Develop and Commit Configuration**
+- Write your Terraform configuration files (.tf) in the `terraform` directory of your local clone of the GitHub repository.
+- Define your GCP infrastructure using Terraform's syntax.
+
+**Step 2: Collaboration via Pull Requests**
+ - Merging a pull request into `prod` branch triggers Terraform Cloud to `plan` and `apply` the infrastructure.
+
+**Step 3: Infrastructure Monitoring and Management**
+   - Monitor infrastructure states and Terraform runs via the Terraform Cloud dashboard.
+   - Manage state files, and troubleshoot as needed.
+## References
 - Originally crafted for AWS, this guide has been adapted for GCP usage [Link](https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-sign-up).
